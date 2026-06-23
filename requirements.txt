@@ -1,0 +1,25 @@
+# Core data science libraries
+numpy >= 2
+openpyxl == 3.1.5
+pandas == 2.3.3
+scipy == 1.16.3
+statsmodels == 0.14.6
+xgboost == 2.1.4
+
+# Machine learning
+scikit-learn == 1.7.2
+joblib == 1.5.3
+shap == 0.51.0
+
+# Visualization
+matplotlib == 3.10.9
+plotly == 6.7.0
+kaleido >= 1.0.0
+
+# Medical/clinical libraries
+hpo3
+lifelines == 0.30.3
+
+# Utilities
+tqdm
+jupyter
