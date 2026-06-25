@@ -4,7 +4,7 @@ import numpy as np
 import re
 from datetime import datetime
 
-FEATURE_DIR = '/home/sagemaker-user/data/feature_matrices'
+FEATURE_DIR = '../data/feature_matrices'
 
 ## FUNCTIONS FOR GRID / RANDOM SEARCH
 ## FUNCTIONS FOR HANDLING SEARCH RESULTS

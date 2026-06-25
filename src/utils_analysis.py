@@ -30,10 +30,10 @@ def calculate_mean_ci(
     ci_bootstrap = bootstrap(
         data=(values,),
         statistic=np.mean,
-        confidence_level=.95,
-        random_state=614,
+        confidence_level=confidence,
+        random_state=random_state,
         method='percentile',
-        n_resamples=1000)
+        n_resamples=n_resample)
     ci_lower = ci_bootstrap.confidence_interval.low
     ci_upper = ci_bootstrap.confidence_interval.high
     return mean, max(ci_lower, lower), min(ci_upper, upper)

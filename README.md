@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 3. Download the data and assets from Zenodo (run from repo root):
 ```bash
-aws s3 sync s3://nch-ods-data-science/projects/neogx/neogx-iv-manuscript-data/ .
+python download_zenodo_data.py
 ```
 
 4. The expected directory structure is:
@@ -58,7 +58,8 @@ aws s3 sync s3://nch-ods-data-science/projects/neogx/neogx-iv-manuscript-data/ .
 │   ├── utils_training.py
 │   └── utils_analysis.py
 ├── data/
-│   ├── neogx-cohort-dataframe-for-metrics.csv.gz
+│   ├── cohort-dataframe-calibration-validation.csv.gz
+│   ├── cohort-split.csv.gz
 │   ├── feature_matrices/
 │   │   ├── static_features.csv.gz
 │   │   └── pheno_features-*.csv.gz
