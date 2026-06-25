@@ -15,6 +15,14 @@ Machine learning pipeline for genetic diagnostics prediction in neonatal cohorts
 
 ## Environment Setup
 
+### macOS prerequisites
+
+Install Homebrew if needed, then:
+
+```bash
+brew install libomp
+```
+
 #### Option 1 (Recommended): uv
 ##### macOS/Linux
 ```bash
@@ -95,7 +103,7 @@ cd src && jupyter notebook "analysis.ipynb"
 
 ### Required Input Files
 - `data/cohort-dataframe-calibration-validation.csv.gz` - Main cohort data with patient demographics, outcome labels, and prediction-time covariates
-- `cohort-split.csv` - Development/Calibration/Validation cohort membership
+- `cohort-split.csv.gz` - Development/Calibration/Validation cohort membership
 - `data/feature_matrices/static_features.csv.gz` - Static clinical features (sex, GA, birth-weight Z, etc.)
 - `data/feature_matrices/pheno_features-*.csv.gz` - Phenotype matrices for each (vocab, encoding, level4_day) combination
 - `data/search-results.csv.gz` - Hyperparameter grid search results
