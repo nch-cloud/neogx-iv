@@ -8,7 +8,7 @@ RECORD_ID = "20615809"
 
 def destination_path(filename: str) -> Path:
     # data/
-    if filename == "cohort-dataframe-calibration.csv.gz":
+    if filename.startswith('cohort'):
         return Path("data") / filename
 
     if filename == "search-results.csv.gz":
